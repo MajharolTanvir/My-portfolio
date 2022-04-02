@@ -6,7 +6,7 @@ import '../css/Header.css'
 const Header = () => {
     const [open, setOpen] = useState(false)
     return (
-        <div className='container mx-auto flex my-3 justify-between'>
+        <div className='flex my-3 justify-between'>
             <div className='text-2xl'>
                 <h3>Tanvir's Portfolio</h3>
             </div>
