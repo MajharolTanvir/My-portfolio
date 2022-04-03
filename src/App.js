@@ -5,19 +5,21 @@ import Header from './Componend/js/Header';
 import Home from './Componend/js/Home';
 import NotFound from './Componend/js/NotFound';
 import Service from './Componend/js/Service';
-import WorkedSide from './Componend/js/WorkedSide';
+import Project from './Componend/js/WorkedSide';
 
 function App() {
   return (
-    <div className="App container mx-auto">
+    <div className="App body">
       <Header></Header>
-      <Routes>
-        <Route path='/' element={<Home></Home>}></Route>
-        <Route path='/service' element={<Service></Service>}></Route>
-        <Route path='/portfolio' element={<WorkedSide></WorkedSide>}></Route>
-        <Route path='/contact' element={<Contact></Contact>}></Route>
-        <Route path='*' element={<NotFound></NotFound>}></Route>
-      </Routes>
+      <div className='app-container'>
+        <Routes>
+          <Route path='/' element={<Home></Home>}></Route>
+          <Route path='/service' element={<Service></Service>}></Route>
+          <Route path='/project' element={<Project></Project>}></Route>
+          <Route path='/contact' element={<Contact></Contact>}></Route>
+          <Route path='*' element={<NotFound></NotFound>}></Route>
+        </Routes>
+      </div>
     </div>
   );
 }
